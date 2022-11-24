@@ -12,12 +12,13 @@
     border-bottom: 20px solid rgb(56, 255, 6);
     margin: 0 auto;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .clouds {
     top: 20px;
     width: 400px;
-    position: absolute;
+    position: absolute
 }
 
 .start .clouds {
@@ -66,7 +67,7 @@
     height: 80px;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0;  
 }
 
 .start .pipe {

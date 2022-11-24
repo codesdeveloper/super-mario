@@ -5,7 +5,7 @@ var clouds = document.querySelector('.clouds');
 var restart = document.querySelector('.restart');
 var score = 0;
 
-window.addEventListener('keydown', () => {
+let pul = () => {
     if (!game.classList.contains('start')) start();
     else {
         mario.classList.add('jump');
@@ -13,7 +13,10 @@ window.addEventListener('keydown', () => {
             mario.classList.remove('jump');
         }, 500);
     }
-});
+}
+
+window.addEventListener('keydown', pul);
+window.addEventListener('click', pul);
 
 var loop = false;
 setInterval(() => {
